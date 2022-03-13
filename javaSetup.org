@@ -1,0 +1,49 @@
+#+TITLE: Java Setup
+* Java environment Setup
+
+I created these instrunctions for setting up a development environment with the latest
+versions of Java and gradle.    If you pull this project you can build and execute tests using the
+wrapper at the top-level of this project.  That's why the steps to install homebrew and
+gradle are optional.
+
+On the other hand having homebrew gives you many other useful things, so it's good to have.
+
+** Install Java 17 (latest)
+#+begin_src shell
+brew update && brew install java
+sudo ln -sfn /Users/ovidiu.sofariu/opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+#+end_src
+
+** Install Homebrew (optionally)
+Visit: https://brew.sh
+
+#+begin_src shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#+end_src
+
+** Install gradle (optionally)
+It pulls in lots of things..
+
+#+begin_src shell
+brew install gradle
+#+end_src
+
+** Setup project
+#+begin_src shell
+mkdir bowling
+cd bowling
+gradle init
+# 2: application
+# 3: Java
+# 1: no sub-projects
+# 1: groovy DSL
+# no (default) for new APIs
+# 4: JUnit Jupiter
+# project name: bowling
+#+end_src
+
+** Install Vscode
+https://code.visualstudio.com/download
+
+** What you get
+- A
