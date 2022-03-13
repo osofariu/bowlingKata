@@ -2,13 +2,14 @@
 * Java environment Setup
 
 I created these instrunctions for setting up a development environment with the latest
-versions of Java and gradle.    If you pull this project you can build and execute tests using the
-wrapper at the top-level of this project.  That's why the steps to install homebrew and
-gradle are optional.
+versions of Java and gradle. If you pull this project you can build and execute tests
+using the wrapper at the top-level of this project. That's why the steps to install
+homebrew and gradle are optional.On the other hand having homebrew gives you many other
+useful things, so it's good to have.
 
-On the other hand having homebrew gives you many other useful things, so it's good to have.
+Java 8 SDK may already be installed on your machine.  If it is this should work with Java 8.
 
-** Install Java 17 (latest)
+** Install Java 17 (optional)
 #+begin_src shell
 brew update && brew install java
 sudo ln -sfn /Users/ovidiu.sofariu/opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
@@ -44,6 +45,3 @@ gradle init
 
 ** Install Vscode
 https://code.visualstudio.com/download
-
-** What you get
-- A
