@@ -2,7 +2,7 @@
 
 * Each game, or “line” of bowling, includes ten turns, or “frames” for the bowler.
 
-* In each frame, the bowler gets up to two tries to knock down all the pins.
+* In each frame, the bowler gets up to two tries ("rolls") to knock down all the pins.
 
 * If in two tries, he fails to knock them all down, his score for that frame is the total number of pins knocked down in his two tries.
 
@@ -18,7 +18,9 @@
 
 * Provide two public methods: 
 
-void roll(int n)
-int score()
+```
+    void roll(int n)   // roll 0-10 pins per try
+    int score()        // score the entire game
+```
 
 * In order to score you must provide enough roll's to play an entire game.
